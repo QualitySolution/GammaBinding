@@ -6,6 +6,8 @@ namespace Gamma.Widgets.SidePanels
 	{
 		private global::Gtk.HBox hboxMain;
 
+		private global::Gtk.Alignment container;
+
 		private global::Gtk.EventBox eventboxArrow;
 
 		private global::Gtk.VBox vbox4;
@@ -29,6 +31,12 @@ namespace Gamma.Widgets.SidePanels
 			this.hboxMain.Name = "hboxMain";
 			this.hboxMain.Spacing = 6;
 			// Container child hboxMain.Gtk.Box+BoxChild
+			this.container = new global::Gtk.Alignment(0.5F, 0.5F, 1F, 1F);
+			this.container.Name = "container";
+			this.hboxMain.Add(this.container);
+			global::Gtk.Box.BoxChild w1 = ((global::Gtk.Box.BoxChild)(this.hboxMain[this.container]));
+			w1.Position = 0;
+			// Container child hboxMain.Gtk.Box+BoxChild
 			this.eventboxArrow = new global::Gtk.EventBox();
 			this.eventboxArrow.Name = "eventboxArrow";
 			// Container child eventboxArrow.Gtk.Container+ContainerChild
@@ -39,16 +47,16 @@ namespace Gamma.Widgets.SidePanels
 			this.vseparator1 = new global::Gtk.VSeparator();
 			this.vseparator1.Name = "vseparator1";
 			this.vbox4.Add(this.vseparator1);
-			global::Gtk.Box.BoxChild w1 = ((global::Gtk.Box.BoxChild)(this.vbox4[this.vseparator1]));
-			w1.Position = 0;
+			global::Gtk.Box.BoxChild w2 = ((global::Gtk.Box.BoxChild)(this.vbox4[this.vseparator1]));
+			w2.Position = 0;
 			// Container child vbox4.Gtk.Box+BoxChild
 			this.arrowSlider = new global::Gtk.Arrow(((global::Gtk.ArrowType)(3)), ((global::Gtk.ShadowType)(2)));
 			this.arrowSlider.Name = "arrowSlider";
 			this.vbox4.Add(this.arrowSlider);
-			global::Gtk.Box.BoxChild w2 = ((global::Gtk.Box.BoxChild)(this.vbox4[this.arrowSlider]));
-			w2.Position = 1;
-			w2.Expand = false;
-			w2.Fill = false;
+			global::Gtk.Box.BoxChild w3 = ((global::Gtk.Box.BoxChild)(this.vbox4[this.arrowSlider]));
+			w3.Position = 1;
+			w3.Expand = false;
+			w3.Fill = false;
 			// Container child vbox4.Gtk.Box+BoxChild
 			this.labelTitle = new global::Gtk.Label();
 			this.labelTitle.Name = "labelTitle";
@@ -56,22 +64,22 @@ namespace Gamma.Widgets.SidePanels
 			this.labelTitle.SingleLineMode = true;
 			this.labelTitle.Angle = 90D;
 			this.vbox4.Add(this.labelTitle);
-			global::Gtk.Box.BoxChild w3 = ((global::Gtk.Box.BoxChild)(this.vbox4[this.labelTitle]));
-			w3.Position = 2;
-			w3.Expand = false;
-			w3.Fill = false;
+			global::Gtk.Box.BoxChild w4 = ((global::Gtk.Box.BoxChild)(this.vbox4[this.labelTitle]));
+			w4.Position = 2;
+			w4.Expand = false;
+			w4.Fill = false;
 			// Container child vbox4.Gtk.Box+BoxChild
 			this.vseparator2 = new global::Gtk.VSeparator();
 			this.vseparator2.Name = "vseparator2";
 			this.vbox4.Add(this.vseparator2);
-			global::Gtk.Box.BoxChild w4 = ((global::Gtk.Box.BoxChild)(this.vbox4[this.vseparator2]));
-			w4.Position = 3;
+			global::Gtk.Box.BoxChild w5 = ((global::Gtk.Box.BoxChild)(this.vbox4[this.vseparator2]));
+			w5.Position = 3;
 			this.eventboxArrow.Add(this.vbox4);
 			this.hboxMain.Add(this.eventboxArrow);
-			global::Gtk.Box.BoxChild w6 = ((global::Gtk.Box.BoxChild)(this.hboxMain[this.eventboxArrow]));
-			w6.Position = 1;
-			w6.Expand = false;
-			w6.Fill = false;
+			global::Gtk.Box.BoxChild w7 = ((global::Gtk.Box.BoxChild)(this.hboxMain[this.eventboxArrow]));
+			w7.Position = 1;
+			w7.Expand = false;
+			w7.Fill = false;
 			this.Add(this.hboxMain);
 			if ((this.Child != null))
 			{

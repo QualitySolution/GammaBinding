@@ -18,6 +18,8 @@ namespace Gamma.Widgets.SidePanels
 
 		private global::Gtk.VSeparator vseparator2;
 
+		private global::Gtk.Alignment container;
+
 		protected virtual void Build()
 		{
 			global::Stetic.Gui.Initialize(this);
@@ -72,6 +74,12 @@ namespace Gamma.Widgets.SidePanels
 			w6.Position = 0;
 			w6.Expand = false;
 			w6.Fill = false;
+			// Container child hboxMain.Gtk.Box+BoxChild
+			this.container = new global::Gtk.Alignment(0.5F, 0.5F, 1F, 1F);
+			this.container.Name = "container";
+			this.hboxMain.Add(this.container);
+			global::Gtk.Box.BoxChild w7 = ((global::Gtk.Box.BoxChild)(this.hboxMain[this.container]));
+			w7.Position = 1;
 			this.Add(this.hboxMain);
 			if ((this.Child != null))
 			{
